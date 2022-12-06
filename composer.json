@@ -1,5 +1,5 @@
 {
-    "name": "dlu/dluphpsettings",
+    "name": "ankitsam/dluphpsettings",
     "description": "ZF2 module to set PHP ini settings based on the configuration data",
     "license": "New-BSD-License",
     "keywords": [
@@ -9,7 +9,7 @@
         "zend framework 2",
         "module"
     ],
-    "homepage": "https://bitbucket.org/dlu/dluphpsettings",
+    "homepage": "https://github.com/ankitsam/dluphpsettings",
     "authors": [
         {
             "name": "David Lukas",

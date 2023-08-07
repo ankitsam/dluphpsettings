@@ -1,15 +1,17 @@
 <?php
 namespace DluPhpSettings;
-use Zend\EventManager\Event;
+use Laminas\EventManager\Event;
+use Laminas\Loader\ClassMapAutoloader;
+use Laminas\Loader\StandardAutoloader;
 
 class Module
 {
     public function getAutoloaderConfig() {
         return array(
-            'Zend\Loader\ClassMapAutoloader' => array(
+            'ClassMapAutoloader' => array(
                 __DIR__ . '/autoload_classmap.php',
             ),
-            'Zend\Loader\StandardAutoloader' => array(
+            'StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),
@@ -27,7 +29,7 @@ class Module
      */
     public function onBootstrap(Event $e) {
         $app            = $e->getParam('application');
-        /* @var $app \Zend\Mvc\Application */
+        /* @var $app \Laminas\Mvc\Application */
         $config         = $app->getConfig();
         if(array_key_exists('phpSettings', $config)) {
             $phpSettings    = $config['phpSettings'];

@@ -6,14 +6,8 @@ DluPhpSettings
 Introduction
 ------------
 
-DluPhpSettings is a [Zend Framework 2](http://framework.zend.com/zf2) module used to set the PHP ini settings based
+DluPhpSettings is a [Laminas](https://getlaminas.org/) module used to set the PHP ini settings based
 on the configuration data.
-
-More info
----------
-
-You can find more information and discussion of this module on my blog [ZF Daily](http://www.zfdaily.com) here:
-[Configuring PHP ini Settings in ZF2](http://www.zfdaily.com/2012/04/configuring-php-settings-in-zf2/)
 
 --------------------------
 
@@ -68,5 +62,4 @@ Links
 -----
 
 - [DluPhpSettings](https://bitbucket.org/dlu/dluphpsettings) - git repository on BitBucket
-- [Configuring PHP ini Settings in ZF2](http://www.zfdaily.com/2012/04/configuring-php-settings-in-zf2/) - blog post
   about this module

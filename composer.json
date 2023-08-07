@@ -1,23 +1,22 @@
 {
     "name": "ankitsam/dluphpsettings",
-    "description": "ZF2 module to set PHP ini settings based on the configuration data",
+    "description": "Laminas module to set PHP ini settings based on the configuration data",
     "license": "New-BSD-License",
     "keywords": [
         "dluphpsettings",
         "php settings",
-        "zf2",
-        "zend framework 2",
+        "laminas",
         "module"
     ],
     "homepage": "https://github.com/ankitsam/dluphpsettings",
     "authors": [
         {
-            "name": "David Lukas",
-            "homepage": "http://www.zfdaily.com"
+            "name": "David Lukas"
         }
     ],
     "require": {
-        "zendframework/zendframework": ">=2.0.5"
+        "laminas/laminas-loader": "^2.8",
+        "laminas/laminas-eventmanager": "^3.5"
     },
     "autoload": {
         "classmap": [

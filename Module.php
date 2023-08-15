@@ -1,17 +1,15 @@
 <?php
 namespace DluPhpSettings;
 use Laminas\EventManager\Event;
-use Laminas\Loader\ClassMapAutoloader;
-use Laminas\Loader\StandardAutoloader;
 
 class Module
 {
     public function getAutoloaderConfig() {
         return array(
-            'ClassMapAutoloader' => array(
+            'Laminas\Loader\ClassMapAutoloader' => array(
                 __DIR__ . '/autoload_classmap.php',
             ),
-            'StandardAutoloader' => array(
+            'Laminas\Loader\StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),

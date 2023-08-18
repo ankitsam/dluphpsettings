@@ -16,7 +16,7 @@
     ],
     "require": {
         "laminas/laminas-loader": "^2.5",
-        "laminas/laminas-eventmanager": "^2.5"
+        "laminas/laminas-eventmanager": "^3.2"
     },
     "autoload": {
         "classmap": [
